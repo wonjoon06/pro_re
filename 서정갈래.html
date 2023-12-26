@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>웹사이트 제목</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg');
+    background-size: 100% 800px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: rgba(240, 240, 240, 0.8);
+    padding: 20px;
+  }
+
+  .content {
+    margin-left: 240px;
+    background-color: transparent;
+  }
+
+  .title-container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    margin-bottom: 0px;
+  }
+
+  .box {
+    border: 1px solid #000;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: none;
+  }
+
+  .box img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* 오른쪽 상단 사진 스타일 */
+  .top-right-image {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    max-width: 200px;
+    height: auto;
+  }
+
+  .image1-size {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  }
+
+  /* 선택지 스타일 */
+  .choices {
+    margin-top: 20px;
+  }
+
+  .choice {
+    cursor: pointer;
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <h2>목차</h2>
+  <ul>
+    <li><a href="#topic1">서정 갈래란?</a></li>
+    <li><a href="#topic2">서정 갈래의 흐름</a></li>
+    <li><a href="#topic3">여러가지 서정 갈래 시</a></li>
+  </ul>
+</div>
+
+<div class="content">
+  <div class="title-container">
+    <h1>서정 갈래</h1>
+  </div>
+
+  <!-- 오른쪽 상단 사진 추가 -->
+  <a href="https://sasa.sjeduhs.kr/sasa-s/main.do?sso=ok" target="_blank">
+    <img src="SASA.png" alt="SASA 이미지" class="top-right-image">
+  </a>
+
+  <div class="box" id="topic1">
+    <h2>서정 갈래란?</h2>
+    <p>서정 갈래는 개인의 감정과 사상을 중시하는 문학의 한 장르입니다. 이 장르에서 작가의 내면세계와 감정이 강조되며, 주로 시 형태로 표현됩니다. 서정 갈래의 작품들은 독자에게 깊은 감동을 주기 위해 리듬, 운율, 이미지와 같은 언어적 요소들을 섬세하게 활용합니다.</p>
+    <p>서정 갈래의 시는 개인의 경험, 사랑, 자연, 죽음, 삶의 아름다움 등 다양한 주제를 다룹니다. 이러한 시들은 감정의 진실성과 표현의 아름다움을 통해 독자의 마음에 감동을 주고, 공감을 이끌어냅니다. 때로는 사회적, 정치적 주제를 다루기도 하며, 이 경우에도 개인적 감정을 통해 그 메시지를 전달합니다.</p>
+    <p>서정 갈래는 동양과 서양 문학에서 모두 찾아볼 수 있으며, 각 문화와 시대의 특성을 반영합니다. 한국의 전통 서정시에서는 자연과 인간의 관계, 고독과 슬픔 등이 중요한 주제로 자리 잡고 있습니다. 반면, 서양의 서정시에서는 개인적 자유, 사랑, 내면의 탐구 등이 강조됩니다.</p>
+    <p>서정 갈래는 독자에게 끊임없이 변화하는 감정의 세계를 탐험할 기회를 제공하며, 이를 통해 자신의 내면을 들여다보고, 삶의 다양한 측면을 고찰할 수 있게 합니다. 이러한 이유로 서정 갈래는 많은 사람들에게 사랑받는 문학 장르로 남아있습니다.</p>
+    <h2>서정 갈래의 기본에 대해 알아보기</h2>
+    <p><a href="https://youtu.be/KX7iohypGyE?si=7TF18aTNNkdH0CTT" target="_blank">서정 갈래에 대한 동영상 링크</a></p>
+  </div>
+
+  <div class="box" id="topic2">
+    <h2>서정 갈래의 흐름</h2>
+    <p>아래 표가 서정 갈래의 흐릅입니다.</p>
+    <img src="image2.jpg" alt="소주제 3 이미지" class="image2-size">
+    <img src="image3.jpg" alt="소주제 3 이미지" class="image3-size">
+  </div>
+
+  <div class="box" id="topic3">
+    <h2>여러가지 서정 갈래 시</h2>
+    <p>아래의 시들이 서정 갈래 시의 예시입니다.</p>
+    <p>아래의 선택지를 클릭하여 서로 다른 시를 볼 수 있습니다!</p>
+    <div class="choices">
+      <button class="choice" id="choiceA">A</button>
+      <button class="choice" id="choiceB">B</button>
+      <button class="choice" id="choiceC">C</button>
+      <button class="choice" id="choiceD">D</button>
+    </div>
+    <div id="poemContainer"></div>
+  </div>
+
+<script>
+  // 각 선택지를 클릭할 때 해당하는 시를 보여주는 함수
+  function showPoem(choice) {
+    var poemContainer = document.getElementById('poemContainer');
+    poemContainer.innerHTML = ''; // 기존 시 내용 초기화
+
+    // 선택지에 따라 다른 시를 생성하여 표시
+    var poem = document.createElement('div');
+    poem.innerHTML = '';
+
+    switch (choice) {
+      case 'A':
+        poem.innerHTML = `
+          <h3>공무도하가</h3>
+          <p>公無渡河 임아 그 물을 건너지 마오</p>
+          <p>公竟渡河 임은 끝내 물을 건너셨네</p>
+          <p>墮河而死 물에 빠져 돌아가시니</p>
+          <p>當奈公何 가신 임을 어찌할꼬</p>
+        `;
+        break;
+      case 'B':
+        poem.innerHTML = `
+          <h3>황조가</h3>
+          <p>翩翩黃鳥 펄펄 나는 저 꾀꼬리</p>
+          <p>雌雄相依 암수 서로 정답구나.</p>
+          <p>念我之獨 외로울사 이내 몸은</p>
+          <p>誰其與歸 뉘와 함께 돌아갈꼬.</p>
+        `;
+        break;
+      case 'C':
+        poem.innerHTML = `
+          <h3>구지가</h3>
+          <p>龜何龜何 거북아 거북아</p>
+          <p>首其現也 머리를 내어라</p>
+          <p>若不現也 내어놓지 않으면</p>
+          <p>燔灼而喫也 구워서 먹으리/p>
+        `;
+        break;
+      case 'D':
+        poem.innerHTML = `
+          <h3>슬픔이 기쁨에게 - 정호승</h3>
+          <p>나는 이제 너에게도 슬픔을 주겠다.</p>
+          <p>사랑보다 소중한 슬픔을 주겠다.</p>
+          <p>겨울밤 거리에서 귤 몇 개 놓고</p>
+          <p>살아온 추위와 떨고 있는 할머니에게</p>
+          <p>귤 값을 깎으면서 기뻐하던 너를 위하여</p>
+          <p>나는 슬픔의 평등한 얼굴을 보여 주겠다.</p>
+          <p>내가 어둠 속에서 너를 부를 때</p>
+          <p>단 한 번도 평등하게 웃어 주질 않은</p>
+          <p>가마니에 덮인 동사자가 다시 얼어 죽을 때</p>
+          <p>가마니 한 장조차 덮어주지 않은</p>
+          <p>무관심한 너의 사랑을 위해</p>
+          <p>흘릴 줄 모르는 너의 눈물을 위해</p>
+          <p>나는 이제 너에게도 기다림을 주겠다.</p>
+          <p>이 세상에 내리던 함박눈을 멈추겠다.</p>
+          <p>보리밭에 내리던 봄눈들을 데리고</p>
+          <p>추워 떠는 사람들의 슬픔에게 다녀와서</p>
+          <p>눈 그친 눈길을 너와 함께 걷겠다.</p>
+          <p>슬픔의 힘에 대한 이야기를 하며</p>
+          <p>기다림의 슬픔까지 걸어가겠다.</p>
+        `;
+        break;
+      default:
+        break;
+    }
+
+    poemContainer.appendChild(poem);
+  }
+
+  // 선택지 버튼 클릭 이벤트 핸들러 등록
+  document.getElementById('choiceA').addEventListener('click', function() {
+    showPoem('A');
+  });
+  document.getElementById('choiceB').addEventListener('click', function() {
+    showPoem('B');
+  });
+  document.getElementById('choiceC').addEventListener('click', function() {
+    showPoem('C');
+  });
+  document.getElementById('choiceD').addEventListener('click', function() {
+    showPoem('D');
+  });
+
+  // 목차 링크 클릭 시 해당 목차로 스크롤하면서 내용 표시
+  document.querySelectorAll('.sidebar ul li a').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      var targetId = this.getAttribute('href').substring(1); // '#' 제외한 목차 아이디
+      var targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        // 모든 내용 숨기고 클릭한 목차의 내용 토글
+        document.querySelectorAll('.box').forEach(function(box) {
+          if (box.style.display === 'block' && box.id !== targetId) {
+            box.style.display = 'none';
+          } else if (box.id === targetId) {
+            box.style.display = (box.style.display === 'block') ? 'none' : 'block';
+          }
+        });
+        // 스크롤 이동
+        window.scrollTo({
+          top: targetElement.offsetTop,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
