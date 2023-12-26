@@ -243,13 +243,13 @@ button:focus {
     line-height: 150px;
 }
 #quick-icon1 {
-    background-image:url('../image/icon-1.jpg');
+    background-image:url('icon-1.jpg');
 }
 #quick-icon2 {
-    background-image:url('../image/icon-2.jpg');
+    background-image:url('icon-2.jpg');
 }
 #quick-icon3 {
-    background-image:url('../image/icon-3.jpg');
+    background-image:url('icon-3.jpg');
 }
 
 #links ul li a p {
