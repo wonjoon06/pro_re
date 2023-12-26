@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>고려 시대 문학</title>
+  <style>
+    body {
+      font-family: 'Gugi', cursive;
+      margin: 0; 
+      height: 100%;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('웹사이트 배경화면.jpg'); 
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0.25; 
+      z-index: -1; 
+    }
+
+    .content {
+      padding: 20px;
+      max-width: 1200px; 
+      margin: 0 auto; 
+    }
+
+    .title-container {
+      text-align: center;
+      background-color: black;
+      color: white;
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+
+    .boxes-row {
+      display: flex;
+      margin-bottom: 20px;
+    }
+
+    .interactive-box {
+      border: 1px solid #000;
+      background-color: #e0e0e0;
+      color: black;
+      padding: 20px;
+      margin-right: 10px;
+      flex-grow: 1;
+      transition: transform 0.3s ease;
+      transform-origin: center center;
+      cursor: pointer;
+    }
+
+    .interactive-box:last-child {
+      margin-right: 0;
+    }
+
+    .interactive-box:hover, .box:hover {
+      transform: scale(1.05);
+    }
+
+    .hidden-menu {
+      display: none;
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .interactive-box:hover .hidden-menu {
+      display: block;
+    }
+
+    .hidden-menu a {
+      color: black;
+      text-decoration: none;
+    }
+
+    .hidden-menu a:hover {
+      color: rgb(255, 0, 221);
+    }
+
+    .box {
+      border: 1px solid #000;
+      background-color: white;
+      color: black;
+      padding: 20px;
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+      transform-origin: center center;
+    }
+
+    .box img {
+      max-width: 50%; 
+      height: auto; 
+      display: block; 
+      margin: 0 auto; 
+    }
+
+  </style>
+<script>
+  function showSection(section) {
+    var boxes = document.getElementsByClassName('box');
+    for (var i = 0; i < boxes.length; i++) {
+      boxes[i].style.display = 'none';
+    }
+
+    var selectedBoxes = document.getElementsByClassName(section);
+    for (var i = 0; i < selectedBoxes.length; i++) {
+      selectedBoxes[i].style.display = 'block';
+    }
+  }
+</script>
+</head>
+<body>
+  <div class="content">
+    <div class="title-container">
+      <h1>고려 시대 문학</h1>
+    </div>
+    <div class="boxes-row">
+    <!-- 순서대로 알아보는 고려문학 박스 -->
+    <div class="interactive-box">
+      <h2 onclick="showSection('topic');">순서대로 알아보는 고려문학</h2>
+      <ul class="hidden-menu">
+        <li><a href="#topic1">구비 문학의 자취</a></li>
+        <li><a href="#topic2">시가 문학의 동향</a></li>
+        <li><a href="#topic3">서사 문학의 모색</a></li>
+        <li><a href="#topic4">한문학의 융성</a></li>
+        <li><a href="#topic5">고려시대 문학 총정리</a></li>
+      </ul>
+    </div>
+
+    <div class="interactive-box">
+      <h2 onclick="showSection('work');">작품으로 알아보는 고려문학</h2>
+      <ul class="hidden-menu">
+        <li><a href="#work1">삼국유사</a></li>
+        <li><a href="#work2">동명왕편</a></li>
+        <li><a href="#work4">고려처용가</a></li>
+        <li><a href="#work5">파한집</a></li>
+      </ul>
+    </div>
+    </div>
+
+
+
+  <div class="box work" id="work1">
+    <h2>삼국유사</h2>
+    <p> 고려 후기의 승려, 일연이 고조선에서부터 후삼국까지의 유사(遺事)를 모아 편찬한 역사서 <br>
+       총 5권 2책이다. <br>
+      9편목: 왕력·기이·흥법·탑상·의해·신주·감통·피은·효선 -> 저자의 관심을 끈 자료들을 선택적으로 수집·분류한 자유롭고 독특한 형식 <br>
+      신이한 역사 이야기와 그 전거를 밝힘 & 고대 사료의 원형을 전달 -> 사료적 가치 important  <br>
+      총체적인 문화유산의 원천적 보고로 평가 & 한국 고대어 연구와 불교미술 연구를 위한 중요한 문헌 <br>
+      <br>
+       >> <a href="https://encykorea.aks.ac.kr/Article/E0026482" target="_blank">삼국유사 더 알아보기</a> <<
+    </p>
+  </div>
+
+  <div class="box work" id="work2">
+    <h2>동명왕편</h2>
+    <p> 고려 후기에 이규보(李奎報)가 지은 한문서사시 <br>
+      고려는 중국의 강력한 문화적 영향 아래 but 독자적인 한국 문화와 정체성을 강조하는 데 기여 <br>
+      오언 장편 282구의 장편 인물서사시
+      <br> <br>
+      >> <a href="https://encykorea.aks.ac.kr/Article/E0016437" target="_blank">동명왕편 더 알아보기</a> <<
+      </p>
+  </div>
+
+  <div class="box work" id="work4">
+    <h2>고려처용가</h2>
+    <p> 작자와 연대 미상의 고려속요 <br>
+      4단 또는 5단 구성 & 전강 · 후강 · 대엽의 강엽구조를 2번 반복 <br>
+      신라 향가인 「처용가」에서 유래 (끝 2구를 제외한 6구가 포함) but 내용 & 형식 다름 <br>
+      처용의 형상에 대한 묘사와 찬양, 역신에 대한 위협적인 언술, 처용에 대한 역신의 발원 등의 서사적 구조 <br>
+      독특한 극적 형식 -> 고려가요의 면모를 보여줌 <br> 
+      「고려처용가」는 향가 「처용가」를 이해하는 데 중요한 자료 <br>
+      궁중의 연희와 나례에서 실연된 연희성과 제의성의 두 요소가 복합적으로 계승 <br>
+      <br>
+
+      >> <a href="https://encykorea.aks.ac.kr/Article/E0077561" target="_blank">고려처용가 더 알아보기</a> <<
+    </p>
+  </div>
+
+  <div class="box work" id="work5">
+    <h2>파한집</h2>
+    <p> 고려시대 문신 이인로가 시평 · 서필담(書筆談) · 수필 · 시화 등 83편을 수록한 시화집. 시화 · 잡록집 <br>
+      <br>
+      >> <a href="https://encykorea.aks.ac.kr/Article/E0059630" target="_blank">파한집 더 알아보기</a> <<     
+      </p>
+  </div>
+  
+
+
+  <div class="box topic " id="topic">
+    <h2>구비 문학의 자취</h2>
+    <p>고려 시대 초의 설화 문학에는 고대의 건국 신화에서 여로 요소를 따와 만든 고려 건국 신화가 있다. <br>
+       또한, 설화 작품을 문자로 적기도 하였는데 이인로의 "파한집", 최자의 "보한집", 이규보의 "백운소설", 이제현의 이제현의 "역옹패설" 등이 있다.<br>
+        이런 이야기들은 기록으로 전해지지만 주로 길거리에 떠도는 이야기들이므로 구비문학이라 볼 수 있다. <br>
+        이를 옛 중국 관리의 명칭에서 따온 패관 문학이라고도 한다. 고려 시대까지 남아있고 현재까지도 전해지는 대표적인 구비문학에는 주몽신화가 있다. <br>
+    </p>
+    <img src="주몽신화.png" alt="구비 문학의 자취 이미지">
+  </div>
+
+  <div class="box topic" id="topic2">
+    <h2>시가 문학의 동향</h2>
+    <p> 고려 시대에는 신라의 문화유산이 일부만 계승되면서 문화와 문학 사이에 커다란 변동이 일어났다. <br>
+        향가는 고려 광종 때 지어진 균여의 '보현십원가'를 끝으로 소멸하였지만, 예종의 '도이장가'와 정서의 '정과정' 등에 그 잔영이 살아남았다. <br>
+        이들은 고려 시대 가요이지만, 향가의 흔적이 강하게 남아 있어서 특별히 '향가계 여요'라고도 한다. <br>
+        이 시기의 문학으로는 속요와 경기체가가 있고 후기에는 시조와 가사가 등장한다. <br>
+        속요는 민요에서 온 것도 있고 개인 창작으로 추정되는 작품도 있지만, 유려한 율조, 진솔한 감정 표현, 사설의 짜임새, 여음의 삽입, 분연체 형식 등에서 민요적 성격을 지닌다. <br>
+        대표작으로는 '처용가', '청산별곡', '가시리', '쌍화점' 등이 있다. <br>
+        조선 시대에 편찬된 '악장가사', '시용향악보'에 한글로 된 가사가 있으며 속요는 조선에서도 궁중에서 연행되었다. <br>
+        그러나, 유학자들에 의해 일부는 연행이 금지되기도 하였다.<br>
+        경기체가는 고종 때 한림제유가 지은 '한곡'이 최초의 작품이다. <br>
+        구체적 사물을 나열하면서 감탄을 직접적으로 노출하는 흐름을 가지고 있는 교술적인 시이다. <br>
+        시조는 서정시의 전통을 이어받으면서 신흥 사대부들의 정서와 이념을 풀어 낸 정제도니 형식의 정형시이다. <br>
+      </p>
+  </div>
+
+  <div class="box topic" id="topic3">
+    <h2>서사 문학의 모색</h2>
+    <p> 서사 문학에서 두드러진 갈래는 동식물이나 다른 사물의 행적이나 공과를 실존 인물의 생애를 기록하는 전 양식을 빌료 표현한 가전체 문학이다. <br>
+        이규보의 '국선생전', 이곡의 '죽부인전' 등이 대표작으로 꼽힌다. <br>
+        주인공의 행적과 공과를 통해 인간이 지켜야 할 도리를 제시했다는 점에서 교술성을 가지면서도, 생애와 행적이 이야기 형식으로 짜여 있다는 점에서 서사성도 동시에 지니고 있다. <br>
+        이는 조선시대 후기까지 이어진다. <br>
+    </p>
+  </div>
+
+  <div class="box topic" id="topic4">
+    <h2>한문학의 융성</h2>
+    <p> 과거제가 실시된 광종 이후에는 한문학은 고려 지배 계층에게 필수적인 교양으로 자리잡았다. <br>
+        이런 제도적 기반 덕분에 한시는 나날이 성장하였다. <br>
+        고려 전기의 최승로, 김부식, 정지상 등과 후기의 이인로, 이규보, 이색 등은 한문학의 대가로 손꼽힌다. <br>
+        이규보는 주몽 신화를 장편의 서사시 '동명왕편'으로 재창조하였고 이승휴는 '제왕운기'에서 우리 역사를 노래하였다. <br>
+        또한 불교 문학도 융성하였다.
+    </p>
+  </div>
+
+  <div class="box topic" id="topic5">
+    <h2>고려시대 문학 총정리</h2>
+    <p> 고려 시대 문학은 중국 문화의 영향을 받으며 한문학이 융성했고, 이는 당시 지식인 계층의 학문과 예술에 깊이 뿌리내렸다. <br>
+        불교 문학이 크게 발전하면서 불교 경전 번역과 창작 불교 시가가 많이 생겨났으며, 이는 고려 문학의 중요한 특징 중 하나다. <br>
+        구비문학도 발달하여, 신화, 전설, 민담 등이 구전으로 널리 퍼져 나갔고, 이야기꾼들에 의해 세대를 거쳐 전해졌다. <br>
+        고려 시가에는 향가의 전통이 계승되면서, 개인의 감정을 섬세하게 표현하는 작품이 많았다. <br>
+        속요, 가사 등의 장르가 등장하여, 서민들의 생활과 정서를 반영하는 문학이 성행했다. <br>
+        한글 창제 이전이라 한문을 사용한 문학 작품이 대부분이었지만, 이는 후대에 한글로 옮겨져 민중에게도 전해졌다. <br>
+        고려 시대의 문학은 왕실과 귀족뿐만 아니라 불교 사원, 지방의 향약 등 다양한 사회 계층에서 꽃피었다. <br>
+        이 시기의 문학 작품들은 문화와 사상, 그리고 당대의 사회상을 반영하며 역사적 가치를 지닌다. <br>
+        고려시대의 서사 문학은 고대의 구비 문학에서 발전하여, 더욱 복잡하고 다양한 이야기 구조를 갖추게 되었다. <br>
+        문학의 이러한 다양성은 고려 후기에 더욱 확산되어, 개성과 창의성이 두드러진 작품들을 남겼다. <br>
+      </p>
+  </div> 
+</div>
+
+</body>
+</html>
